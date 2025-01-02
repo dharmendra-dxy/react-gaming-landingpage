@@ -88,7 +88,11 @@ const Navbar = () => {
                         <div className='hidden md:block '>
                             {
                                 navItems.map((item)=>(
-                                    <a className='nav-hover-btn' key={item} >
+                                    <a 
+                                    className='nav-hover-btn' 
+                                    key={item} 
+                                    href={`#${item.toLowerCase()}`}
+                                    >
                                         {item}
                                     </a>
                                 ))
